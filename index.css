@@ -1,3 +1,39 @@
+:root {
+  --Dark-grey: hsl(234, 12%, 34%);
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Grey: hsl(212, 6%, 44%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--Dark-grey);
+  font-weight: 400;
+}
+.main-container {
+  width: 100%;
+  min-width: 375px;
+  padding: 1rem 2rem;
+}
+.intro-heading-light {
+  opacity: .3;
+}
+.intro-section {
+  text-align: center;
+}
+.card-section{
+  color: var(--Grey);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
