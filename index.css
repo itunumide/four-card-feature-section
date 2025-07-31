@@ -36,15 +36,20 @@ body {
   display: block;
   font-weight: 600;
 }
-.intro-section {
+.intro-section, .card-section {
  display: flex;
  flex-direction: column;
  text-align: center;
  gap: 1rem;
- margin: 2rem 0rem;
+ margin: 1rem 0rem;
 }
 .card-section{
-  color: var(--Grey);
+  text-align: start;
+ 
+}
+.card{
+ border: 1px solid gray;
+ padding: 1rem;
 }
 .attribution {
   font-size: 11px;
