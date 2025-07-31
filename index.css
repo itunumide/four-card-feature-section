@@ -19,17 +19,29 @@ body {
   flex-direction: column;
   color: var(--Dark-grey);
   font-weight: 400;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
 .main-container {
   width: 100%;
   min-width: 375px;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
 }
 .intro-heading-light {
-  opacity: .3;
+ color: var(--grey);
+ font-weight: 200;
+ 
+}
+.intro-heading-bold{
+  display: block;
+  font-weight: 600;
 }
 .intro-section {
-  text-align: center;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ gap: 1rem;
+ margin: 2rem 0rem;
 }
 .card-section{
   color: var(--Grey);
