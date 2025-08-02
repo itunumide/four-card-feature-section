@@ -7,17 +7,18 @@
   --Grey: hsl(212, 6%, 44%);
   --White: hsl(0, 0%, 100%);
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
+  color: var(--Dark-grey);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: var(--Dark-grey);
   font-weight: 400;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -27,29 +28,59 @@ body {
   min-width: 375px;
   padding: 1rem 2.5rem;
 }
-.intro-heading-light {
- color: var(--grey);
- font-weight: 200;
- 
+.intro-heading{
+font-size: 1.5rem;
 }
-.intro-heading-bold{
+.intro-heading-light {
+  color: var(--grey);
+  font-weight: 200;
+}
+.intro-heading-bold {
   display: block;
   font-weight: 600;
 }
-.intro-section, .card-section {
- display: flex;
- flex-direction: column;
- text-align: center;
- gap: 1rem;
- margin: 1rem 0rem;
+.intro-section,
+.card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 3rem 0rem;
 }
-.card-section{
-  text-align: start;
+.intro-section{
+  text-align: center;
+}
+.card-section {
+  gap: 2.5rem;
+}
+.card {
+  padding: 1.2rem 2rem;
+  border-top: 5px solid transparent;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 4px 16px var(--Grey);
+  gap: 1rem;
+}
+.card-supervisor{
+  border-top-color: var(--Cyan);
+}
+.card-team-builder{
+  border-top-color: var(--Red);
+}
+.card-karma{
+  border-top-color: var(--Orange);
+}
+.card-calculator{
+  border-top-color: var(--Blue);
+}
+.image-container{
+  align-self: flex-end;
+  width: 50px;
+  margin: 1rem 0px;
  
-}
-.card{
- border: 1px solid gray;
- padding: 1rem;
+  img{
+    width: 100%;
+  }
 }
 .attribution {
   font-size: 11px;
